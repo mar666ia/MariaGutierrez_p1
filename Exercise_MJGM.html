@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercise 1</title>
+</head>
+<body id="intro">
+    <script>
+        //<p>Hello there, you are <strong>manipulating</strong> the DOOM!</p>
+        const p = document.createElement("p");
+        p.setAttribute("id", "intro");
+        const strong = document.createElement("strong");
+        strong.textContent="manipulating"
+        p.textContent = "Hello there, you are "
+        p.append(strong);
+        p.append(" the DOM!")
+
+        document.body.append(p); 
+    </script>
+</body>
+</html>
